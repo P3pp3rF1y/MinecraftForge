@@ -235,7 +235,7 @@
          this.field_151002_e = p_150996_1_;
      }
  
-@@ -993,4 +1029,64 @@
+@@ -993,4 +1029,69 @@
              return false;
          }
      }
@@ -298,5 +298,10 @@
 +    public boolean hasCapabilities()
 +    {
 +        return this.capabilities != null;
++    }
++
++    public NBTTagCompound getCapNBT()
++    {
++        return this.capabilities == null ? null : this.capabilities.serializeNBT();
 +    }
  }
