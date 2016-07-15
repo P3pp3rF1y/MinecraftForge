@@ -235,7 +235,7 @@
          this.field_151002_e = p_150996_1_;
      }
  
-@@ -993,4 +1029,59 @@
+@@ -993,4 +1029,64 @@
              return false;
          }
      }
@@ -293,5 +293,10 @@
 +        if (stackA.field_77990_d != null && stackB.field_77990_d == null) return false;
 +        if (stackA.field_77990_d != null && !stackA.field_77990_d.equals(stackB.field_77990_d)) return false;
 +        return true;
++    }
++
++    public boolean hasCapabilities()
++    {
++        return this.capabilities != null;
 +    }
  }
